@@ -242,7 +242,7 @@ static void validate_file(const char *path, int number, struct flow *fw,
 
 	full_fn = full_fn_from_number(&filename, path, number);
 	assert(full_fn);
-	printf("Validating file %s ... ", filename);
+	printf("Validating file %03ld.h2w ... ", number + 1);
 	fflush(stdout);
 #ifdef __CYGWIN__
 	/* We don't need write access, but some kernels require that
